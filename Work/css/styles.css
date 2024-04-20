@@ -1,0 +1,356 @@
+* {
+    transition: ease-in-out 0.2s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+
+}
+
+.navhome {
+    padding: 0.5% 20%;
+    display: flex;
+
+    .logo {
+        margin: auto auto auto 0;
+    }
+
+    .links {
+        margin: auto 0 auto auto;
+    }
+}
+
+.links a {
+    text-decoration: none;
+    margin: auto 20px;
+    color: aliceblue;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: solid 2px;
+}
+
+.links a:hover {
+    color: #404f6a;
+}
+
+.home {
+    background-image: url("../images/indexpeak.png");
+    height: 820px;
+    background-position: top center;
+}
+
+.navhistory {
+    height: 70px;
+    padding: 0.5% 20%;
+    display: flex;
+
+    img {
+        margin: auto 5px;
+    }
+
+    .links {
+        margin: auto 0 auto auto;
+
+        a {
+            color: #404f6a;
+        }
+    }
+
+}
+
+.history {
+    background-image: url("../images/peak.png");
+    height: 980px;
+    background-position: top center;
+
+    .content {
+        height: 785px;
+    }
+
+    .content {
+        margin: auto 20%;
+
+        .head {
+            padding-top: 60px;
+            display: flex;
+
+            .img01 {
+                margin: auto 0;
+                height: 140px;
+            }
+
+        }
+
+        .para {
+            margin: -20px 70px;
+            text-align: left;
+        }
+    }
+
+    .scroll {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .gallery {
+
+        background-color: #42526cc7;
+        margin: auto;
+        padding: 20px 20% 30px 20%;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        img {
+            margin: auto 2.5px;
+        }
+    }
+}
+
+.team {
+    background-image: url("../images/Birdsatpeak.png");
+    height: 840px;
+    background-position: top left center;
+
+    .teamtop {
+        display: flex;
+        background-color: #fff;
+        height: 180px;
+        padding: 0.5% 20%;
+
+        .img02 {
+            margin: auto;
+            height: 140px;
+        }
+
+        .para {
+            margin: auto;
+        }
+    }
+
+    .teamnav {
+        background-color: #404f6a;
+        height: 50px;
+        padding: 0 20%;
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: #adb5bf;
+            font-family: "Oswald", sans-serif;
+            font-size: 30px;
+
+
+            font-weight: 600;
+        }
+
+        .select {
+            padding: 0 30px;
+        }
+
+        .select:hover {
+            background-color: #adb5bf;
+            color: #404f6a;
+
+            a {
+                color: #404f6a;
+                border-bottom: solid 2px;
+
+            }
+        }
+    }
+
+    .schedule {
+
+        margin: 10% 25%;
+        background-color: #ffffffa3;
+        width: 300px;
+        padding: 2px 40px;
+
+        h1 {
+            font-family: "Oswald";
+            color: #404f6a;
+            margin-top: 5px;
+        }
+
+        .list {
+
+            display: flex;
+            margin-top: -20px;
+
+            p {
+                margin: -0.5px 0;
+            }
+
+            .dates {
+                padding-right: 80px;
+
+            }
+
+        }
+    }
+}
+
+.footer {
+
+    background-color: #404f6a;
+    height: 70px;
+    padding: 0.5% 20%;
+    display: flex;
+
+    img {
+        margin: auto 5px;
+
+        opacity: 30%;
+
+    }
+
+    div {
+        margin: auto 0 auto auto;
+
+        p {
+            color: #ffffff30;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #404f6a;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212836;
+}
+
+.align {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 47px;
+    margin-left: -26px;
+    padding-top: 24px;
+    padding-right: 35px;
+    color: #404f6a;
+}
+
+@media screen and (max-width: 600px) {
+
+    .navhome,
+    .navhistory,
+    .footer {
+        padding: 0.5% 10%;
+    }
+
+    .history .content {
+        margin: auto 10%;
+    }
+
+    .team .teamtop {
+        padding: 0.5% 10%;
+
+        .para {
+            visibility: hidden;
+        }
+
+    }
+
+    .team .teamnav {
+        padding: 0% 10%;
+
+        .select {
+            padding: 0% 20px;
+        }
+    }
+
+    .team .schedule {
+        margin: 10% 5%;
+    }
+
+    .navhistory {
+        .links {
+            margin-left: 20px;
+
+            a {
+                margin: 0;
+            }
+        }
+
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    .navhome,
+    .navhistory,
+    .footer {
+        padding: 0.5% 2%;
+    }
+
+    .history .content {
+        margin: auto 2%;
+    }
+
+    .team .teamtop {
+        padding: 0.5% 2%;
+
+        .para {
+            visibility: hidden;
+        }
+
+    }
+
+    .team .teamnav {
+        padding: 0% 2%;
+
+        .select {
+            padding: 0% 10px;
+        }
+    }
+
+    .team .schedule {
+        margin: 10% 2%;
+    }
+
+    .navhistory {
+        .links {
+            margin-left: 10px;
+
+            a {
+                margin: 0;
+            }
+        }
+
+    }
+    .align{
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .team .schedule {
+        margin: 10% 0%;
+    }
+    .navhome,
+    .navhistory,
+    .footer {
+        padding: 0.5% 2%;
+    }
+    
+}
